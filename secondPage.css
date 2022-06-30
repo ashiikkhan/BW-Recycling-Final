@@ -211,7 +211,7 @@ img {
   width: 0;
   height: 0;
   position: absolute;
-  right: -50%;
+  right: 0%;
   top: 50px;
   z-index: 1;
   transition: opacity 1s, all 2s;
