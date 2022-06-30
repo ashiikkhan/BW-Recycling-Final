@@ -463,7 +463,6 @@ p {
     padding: 25px 0px 10px 0px;
     text-align: center;
     font-size: 22px;
-    position: relative;
   }
   /* ----main-------- */
   .main-section {
@@ -476,14 +475,14 @@ p {
   }
   .float-btn-container {
     position: sticky;
-    bottom: 300px;
+    top: 80px;
     z-index: 1;
   }
   .float-button {
     padding: 2px 25px;
     font-size: var(--secondary-font-size);
     position: absolute;
-    top: 60%;
+    top: 280px;
     right: -52px;
     z-index: 1;
   }
