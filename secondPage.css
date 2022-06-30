@@ -215,6 +215,7 @@ img {
   transition: 1s;
 }
 .form-active {
+  display: block;
   width: 33%;
   position: absolute;
   right: 50px;
