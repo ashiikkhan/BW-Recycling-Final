@@ -208,7 +208,7 @@ img {
 .form-div {
   width: 33%;
   position: absolute;
-  right: -100%;
+  right: -50%;
   top: 50px;
   z-index: 1;
   transition: 1s;
@@ -442,7 +442,7 @@ p {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     position: relative;
   }
   /*---- logo --- */
@@ -464,7 +464,7 @@ p {
     text-align: center;
     font-size: 22px;
   }
-  /* ----main-------- */
+  /* ------main-------- */
   .main-section {
     flex-direction: column;
     margin: 20px 0px;
