@@ -458,7 +458,7 @@ p {
     font-size: 15px;
   }
   .mobile-menu {
-    margin-right: -15px;
+    margin-right: -10px;
   }
   .mobile-menu i {
     padding: 4px 3px;
@@ -484,7 +484,7 @@ p {
     z-index: 1;
   }
   .float-button {
-    padding: 2px 25px;
+    padding: 3px 25px;
     font-size: var(--secondary-font-size);
     position: absolute;
     top: 280px;
