@@ -135,9 +135,11 @@ img {
 
 /* --------------hero section ------------ */
 .hero-section {
-  background-image: url(./assets/Asset\ 6.png);
-  background-position: center;
-  background-size: cover;
+  background-image: url(assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: 1000px 100px;
+  z-index: 1;
+  /* background image cannot be seen for this color; to check comment out color */
   background-color: var(--secondary-color);
   padding: 40px 0px 30px 0px;
 }
@@ -185,9 +187,9 @@ img {
   font-size: 11px;
   margin-right: 15px;
 }
-/* --------main content---------  */
+/* -------------main content------------- */
 
-/* -----------form ---------- */
+/* -------floating button --------- */
 .float-btn-container {
   position: sticky;
   top: 20%;
@@ -200,6 +202,7 @@ img {
   transform: rotate(-90deg);
   z-index: 1;
 }
+/* -------form div--------- */
 .form-div-container {
   position: sticky;
   top: 40px;
@@ -243,7 +246,7 @@ p {
 .form-line {
   display: flex;
 }
-/*  main content */
+/* ------------ main content -----------*/
 .main-content {
   flex: 7;
   padding: 20px;
@@ -270,12 +273,14 @@ p {
   color: #005f2f;
 }
 
-/* ---------footer------- */
+/* ------------footer------------- */
 
 .footer-area {
   padding: 100px 0;
   background-color: #f4f4f4;
   background-image: url(/assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .footer-about {
   max-width: 40%;
@@ -311,7 +316,7 @@ p {
 }
 
 /* ---------------media query----------------------- */
-
+/* --------max 1200px -------- */
 @media screen and (max-width: 1200px) {
   .header-section {
     padding: 0px 20px;
@@ -319,7 +324,7 @@ p {
   .hero-section {
     padding: 0px 20px;
   }
-  /* header  */
+  /* ----- header --- */
   .logo {
     width: 270px;
   }
@@ -336,17 +341,13 @@ p {
     padding-right: 30px;
     transition: all 0.1s;
   }
+  /* ----------hero -------- */
   .hero-section {
     padding: 40px 0px;
   }
+  /* ---------main sec------ */
   .main-section {
     margin: 50px 25px 20px 0px;
-  }
-  .sidebar {
-    flex: 4;
-  }
-  .main-content {
-    flex: 6;
   }
   .float-btn-container {
     z-index: 1;
@@ -357,8 +358,15 @@ p {
   .form-div {
     width: 45%;
   }
+  /* ----sidebar----- */
+  .sidebar {
+    flex: 4;
+  }
+  .main-content {
+    flex: 6;
+  }
 }
-
+/* ----------  max 992 px --------- */
 @media screen and (max-width: 992px) {
   /* global  */
   .container {
@@ -444,7 +452,7 @@ p {
     margin-bottom: 10px;
   }
 }
-
+/* ---------max 768px ----------- */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -471,25 +479,28 @@ p {
   }
   /* ------main-------- */
   .main-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 20px 0px;
     width: 100%;
   }
   .container {
     padding-left: 10px;
   }
+  /* floating button */
   .float-btn-container {
     position: sticky;
     top: 80px;
     z-index: 1;
   }
   .float-button {
-    padding: 3px 25px;
+    padding: 8px 25px;
     font-size: var(--secondary-font-size);
     position: absolute;
     top: 280px;
-    right: -52px;
+    right: -45px;
     z-index: 1;
+    /* lg btn so brdr */
+    border: 2px solid #f4f4f4;
   }
   .form-div-container {
     position: sticky;
@@ -498,11 +509,12 @@ p {
   }
   .form-active {
     width: 80%;
-    right: 41.5px;
+    right: 52px;
   }
   .contact-form {
     background: var(--secondary-color);
     padding: 15px;
+    border: 2px solid #f4f4f4;
     border-radius: 5px;
   }
   .sidebar {
