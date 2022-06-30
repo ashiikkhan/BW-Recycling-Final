@@ -206,6 +206,7 @@ img {
   z-index: 1;
 }
 .form-div {
+  display: none;
   width: 33%;
   position: absolute;
   right: -50%;
