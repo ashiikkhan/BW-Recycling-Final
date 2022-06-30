@@ -110,90 +110,95 @@
 
     <!-------------------------------- hero section  ------------------------------------------>
     <div class="hero-section">
-      <div class="container">
+      <div class="container hero-container">
         <p>Computers Recycling and Disposal</p>
       </div>
     </div>
     <!-- ------------------------- main section ------------------- -->
     <!-- ----form -- -->
-    <div class="form-div" id="form">
-      <div class="contact-form">
-        <h4>Contact Us</h4>
-        <p>Use this form to contact us with any inquiries.</p>
+    <div class="form-div-container">
+      <div class="form-div" id="form">
+        <div class="contact-form">
+          <!-- <i class="fa-solid fa-rectangle-xmark"></i> -->
+          <h4>Contact Us</h4>
+          <p>Use this form to contact us with any inquiries.</p>
 
-        <form>
-          <div class="form-row">
-            <div class="col pt-3">
+          <form>
+            <div class="form-row">
+              <div class="col pt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name:"
+                />
+              </div>
+              <div class="col pt-3">
+                <input type="text" class="form-control" placeholder="Email:" />
+              </div>
+              <div class="form-line">
+                <div class="col pt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Company Name:"
+                  />
+                </div>
+                <div class="col pt-3">
+                  <input
+                    type="text"
+                    class="form-control mx-1"
+                    placeholder="Phone No:"
+                  />
+                </div>
+              </div>
+              <div class="form-line">
+                <div class="col pt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Address:"
+                  />
+                </div>
+                <div class="ex col pt-3">
+                  <input
+                    type="text"
+                    class="form-control mx-1"
+                    placeholder="Zipcode:"
+                  />
+                </div>
+              </div>
+              <div class="col pt-3">
+                <textarea
+                  class="form-control p-2"
+                  name=""
+                  id=""
+                  cols="55"
+                  rows="3"
+                  placeholder="What do you have to sell?"
+                ></textarea>
+              </div>
               <input
-                type="text"
-                class="form-control"
-                placeholder="Full Name:"
+                class="btn btn-secondary mt-3"
+                type="submit"
+                value="Submit"
               />
             </div>
-            <div class="col pt-3">
-              <input type="text" class="form-control" placeholder="Email:" />
-            </div>
-            <div class="form-line">
-              <div class="col pt-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Company Name:"
-                />
-              </div>
-              <div class="col pt-3">
-                <input
-                  type="text"
-                  class="form-control mx-1"
-                  placeholder="Phone No:"
-                />
-              </div>
-            </div>
-            <div class="form-line">
-              <div class="col pt-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Address:"
-                />
-              </div>
-              <div class="ex col pt-3">
-                <input
-                  type="text"
-                  class="form-control mx-1"
-                  placeholder="Zipcode:"
-                />
-              </div>
-            </div>
-            <div class="col pt-3">
-              <textarea
-                class="form-control p-2"
-                name=""
-                id=""
-                cols="55"
-                rows="3"
-                placeholder="What do you have to sell?"
-              ></textarea>
-            </div>
-            <input
-              class="btn btn-secondary mt-3"
-              type="submit"
-              value="Submit"
-            />
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
     <!-- -----button for contact us ---- -->
-    <div
-      class="float-button float-end btn btn-primary"
-      id="btn"
-      onclick="formDisplay()"
-    >
-      Contact us
+    <div class="float-btn-container">
+      <div
+        class="float-button btn btn-primary"
+        id="btn"
+        onmouseover="formDisplay()"
+      >
+        Contact us
+      </div>
     </div>
     <!-- -----main content  -->
-    <div class="main-area">
+    <div class="main-area container">
       <div class="main-section">
         <!-- ----left sidebar---- -->
         <div class="sidebar">
