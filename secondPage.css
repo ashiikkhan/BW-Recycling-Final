@@ -207,22 +207,24 @@ img {
 }
 .form-div {
   visibility: hidden;
+  opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
   right: -50%;
   top: 50px;
   z-index: 1;
-  transition: 1s;
+  transition: opacity 1s, all 2s;
 }
 .form-active {
   visibility: visible;
+  opacity: 1;
   width: 33%;
   position: absolute;
   right: 50px;
   top: 50px;
   z-index: 1;
-  transition: 1s;
+  transition: all 1s, opacity 2s;
 }
 .contact-form {
   background: var(--secondary-color);
