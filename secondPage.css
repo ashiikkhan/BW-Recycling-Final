@@ -151,7 +151,7 @@ img {
 
 .main-section {
   display: flex;
-  margin: 50px 25px 100px 20px;
+  margin: 50px 25px 100px 0px;
   position: relative;
 }
 /* ---------------sidebar------------- */
@@ -202,16 +202,16 @@ img {
 }
 .form-div-container {
   position: sticky;
-  top: 80px;
+  top: 40px;
   z-index: 1;
 }
 .form-div {
   width: 33%;
   position: absolute;
   right: -100%;
-  top: 16.5%;
+  top: 50px;
   z-index: 1;
-  transition: 0.5s;
+  transition: 1s;
 }
 .form-active {
   width: 33%;
@@ -219,7 +219,7 @@ img {
   right: 50px;
   top: 50px;
   z-index: 1;
-  transition: 0.5s;
+  transition: 1s;
 }
 .contact-form {
   background: var(--secondary-color);
@@ -228,6 +228,7 @@ img {
 }
 .contact-form i {
   color: #f4f4f4;
+  float: right;
 }
 .contact-form h4,
 p {
@@ -334,7 +335,7 @@ p {
     padding: 40px 0px;
   }
   .main-section {
-    margin: 50px 25px 20px 20px;
+    margin: 50px 25px 20px 0px;
   }
   .sidebar {
     flex: 4;
@@ -464,7 +465,7 @@ p {
     font-size: 22px;
     position: relative;
   }
-  /* main */
+  /* ----main-------- */
   .main-section {
     flex-direction: column;
     margin: 20px 0px;
