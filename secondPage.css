@@ -476,7 +476,7 @@ p {
   }
   .float-btn-container {
     position: sticky;
-    top: 40%;
+    top: 300px;
     z-index: 1;
   }
   .float-button {
