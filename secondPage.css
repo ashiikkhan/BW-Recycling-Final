@@ -245,7 +245,7 @@ p {
   justify-content: space-between;
 }
 .img-section img {
-  width: 32%;
+  width: 33%;
 }
 .bottom-content .links a {
   color: #005f2f;
@@ -396,6 +396,15 @@ p {
   .form-div {
     width: 50%;
   }
+  .img-section {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .img-section img {
+    width: 48%;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -420,6 +429,12 @@ p {
   }
   .sidebar {
     padding: 20px 5px 20px 10px;
+  }
+  .img-section {
+    flex-direction: column;
+  }
+  .img-section img {
+    width: 90%;
   }
   /* -------------------footer------------------- */
   .footer-area {
