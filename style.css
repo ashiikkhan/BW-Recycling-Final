@@ -171,6 +171,9 @@ img {
   z-index: 2;
   border: 2px solid #f4f4f4;
 }
+.float-button:hover {
+  background-color: #f2f2f2;
+}
 /* -------form div--------- */
 .form-div-container {
   position: sticky;
@@ -182,21 +185,21 @@ img {
   opacity: 0;
   width: 0;
   height: 0;
-  position: absolute;
+  position: fixed;
   right: 0%;
   top: 50px;
   z-index: 1;
-  transition: 1s;
+  transition: 0.5s;
 }
 .form-active {
   visibility: visible;
   opacity: 1;
   width: 33%;
-  position: absolute;
+  position: fixed;
   right: 50px;
   top: 50px;
-  z-index: 1;
-  transition: 1s;
+  z-index: 5;
+  transition: 0.5s;
 }
 
 /* --------------------------hero-section ---------------------------------------- */
@@ -286,12 +289,19 @@ img {
 .service-box button:hover {
   background-color: #005f2f;
 }
+.service-box button:focus {
+  color: #005f2f;
+  border-color: #005f2f;
+  background-color: #f2f2f2;
+}
 
 /* ----------------------------------carousel section --------------------------------------------------*/
 .carousel-area {
   padding: 70px 0px;
 }
-
+.owl-carousel {
+  z-index: -1;
+}
 /*--------------------------------- contact section --------------------------- */
 .contact-area {
   background-color: var(--background-color);
@@ -575,7 +585,7 @@ p {
   .float-button {
     padding: 8px 25px;
     font-size: var(--secondary-font-size);
-    position: absolute;
+    position: fixed;
     top: 280px;
     right: -45px;
     z-index: 1;
@@ -588,6 +598,7 @@ p {
     z-index: 1;
   }
   .form-active {
+    position: fixed;
     width: 80%;
     right: 52px;
   }
@@ -706,5 +717,11 @@ p {
   }
   .quick-links {
     margin-bottom: -15px;
+  }
+}
+
+@media screen and (max-width: 293px) {
+  .service-box-container .first h3 {
+    font-size: 16px;
   }
 }

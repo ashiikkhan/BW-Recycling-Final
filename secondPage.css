@@ -230,6 +230,9 @@ img {
 
   border: 2px solid #f4f4f4;
 }
+.float-button:hover {
+  background-color: #f2f2f2;
+}
 /* -------form div--------- */
 .form-div-container {
   position: sticky;
@@ -306,7 +309,7 @@ p {
 .footer-area {
   padding: 100px 0;
   background-color: #f4f4f4;
-  background-image: url(/assets/footer-bg.png);
+  background-image: url(assets/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
