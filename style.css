@@ -13,6 +13,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden !important;
+  position: relative;
 }
 :root {
   --primary-color: black;
@@ -109,6 +110,11 @@ img {
 .logo {
   width: 350px;
 }
+.navigation {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
 .navigation a {
   padding-right: 35px;
   transition: all 0.1s;
@@ -123,13 +129,60 @@ img {
   width: 0px;
   height: 4px;
   position: absolute;
-  top: 55px;
+  top: 45px;
   border-radius: 3px;
   transition: all 0.5s;
 }
 .navigation a:hover::before {
   width: 70px;
   height: 4px;
+}
+/* dropdown hover effect off */
+.dropdown-menu a:hover::before {
+  width: unset;
+  height: unset;
+}
+/* -------- form and floating button ----------*/
+
+/* ------- floating button --------- */
+.float-btn-container {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.float-button {
+  position: absolute;
+  top: 300px;
+  right: -50px;
+  transform: rotate(-90deg);
+  z-index: 2;
+}
+/* -------form div--------- */
+.form-div-container {
+  position: sticky;
+  top: 40px;
+  z-index: 1;
+}
+.form-div {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0%;
+  top: 50px;
+  z-index: 1;
+  transition: 1s;
+}
+.form-active {
+  visibility: visible;
+  opacity: 1;
+  width: 33%;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  z-index: 1;
+  transition: 1s;
 }
 
 /* --------------------------hero-section ---------------------------------------- */
@@ -278,6 +331,10 @@ img {
   padding: 30px;
   border-radius: 5px;
 }
+.contact-form i {
+  color: #f4f4f4;
+  float: right;
+}
 .contact-form h4,
 p {
   color: var(--background-color);
@@ -356,10 +413,11 @@ p {
   .logo {
     width: 270px;
   }
-  .navbar {
+  /* direction column keno bujhtesi na */
+  /* .navbar {
     display: flex;
     flex-direction: column;
-  }
+  } */
   .navbar {
     display: flex;
     flex-direction: row;
@@ -375,6 +433,16 @@ p {
   }
   h3 {
     font-size: 20px;
+  }
+  /* form and floating btn */
+  .float-btn-container {
+    z-index: 1;
+  }
+  .float-button {
+    z-index: 1;
+  }
+  .form-div {
+    width: 45%;
   }
 }
 
@@ -424,13 +492,33 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .mobile-nav a {
+  .dropdown {
+    margin: 10px 0px;
+  }
+  .dropdown a {
     margin-right: 70px;
     padding: 10px 0px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.138);
   }
-  .mobile-nav a:hover {
+  .dropdown a:hover {
     color: var(--secondary-color) !important;
+  }
+  /* off design for a tag */
+  .dropdown-menu a {
+    margin-right: unset;
+    padding: 10px;
+    border-bottom: unset;
+  }
+
+  /* form and floating btn */
+  .float-btn-container {
+    z-index: 1;
+  }
+  .float-button {
+    margin-left: 40px;
+  }
+  .form-div {
+    width: 50%;
   }
 
   /* contact section  */
@@ -456,6 +544,37 @@ p {
 @media screen and (max-width: 768px) {
   p {
     font-size: 15px;
+  }
+  /* floating button */
+  .float-btn-container {
+    position: sticky;
+    top: 80px;
+    z-index: 1;
+  }
+  .float-button {
+    padding: 8px 25px;
+    font-size: var(--secondary-font-size);
+    position: absolute;
+    top: 280px;
+    right: -45px;
+    z-index: 1;
+    /* lg btn so brdr */
+    border: 2px solid #f4f4f4;
+  }
+  .form-div-container {
+    position: sticky;
+    top: 10%;
+    z-index: 1;
+  }
+  .form-active {
+    width: 80%;
+    right: 52px;
+  }
+  .contact-form {
+    background: var(--secondary-color);
+    padding: 15px;
+    border: 2px solid #f4f4f4;
+    border-radius: 5px;
   }
 
   /* ------------------service-section--------------- */
