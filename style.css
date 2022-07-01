@@ -164,11 +164,12 @@ img {
   z-index: 2;
 }
 .float-button {
-  position: absolute;
+  position: fixed;
   top: 300px;
   right: -50px;
   transform: rotate(-90deg);
   z-index: 2;
+  border: 2px solid #f4f4f4;
 }
 /* -------form div--------- */
 .form-div-container {

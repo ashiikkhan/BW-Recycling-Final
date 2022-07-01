@@ -227,6 +227,8 @@ img {
   right: -50px;
   transform: rotate(-90deg);
   z-index: 1;
+
+  border: 2px solid #f4f4f4;
 }
 /* -------form div--------- */
 .form-div-container {
