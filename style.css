@@ -155,6 +155,10 @@ img {
   width: unset;
   height: unset;
 }
+.dropdown .dropdown-menu a:active {
+  background-color: #005f2f;
+  color: #f2f2f2;
+}
 /* -------- form and floating button ----------*/
 
 /* ------- floating button --------- */
@@ -300,7 +304,7 @@ img {
   padding: 70px 0px;
 }
 .owl-carousel {
-  z-index: -1;
+  z-index: 0;
 }
 /*--------------------------------- contact section --------------------------- */
 .contact-area {
