@@ -571,7 +571,7 @@ p {
     color: var(--background-color);
   }
 }
-
+/* ----------------------------------- max-width 768px ----------------------------- */
 @media screen and (max-width: 768px) {
   p {
     font-size: 15px;
@@ -607,6 +607,14 @@ p {
     padding: 15px;
     border: 2px solid #f4f4f4;
     border-radius: 5px;
+  }
+  /* --mobile menu---- */
+  .dropdown a {
+    margin-right: unset;
+  }
+  .dropdown .dropdown-menu a {
+    padding: 5px;
+    font-size: 14px;
   }
 
   /* ------------------service-section--------------- */
@@ -667,7 +675,7 @@ p {
     font-size: 16px;
   }
 
-  /* ------------about-area--------------------- */
+  /* ------------ about-area ----------------- */
 
   .about-area {
     padding: 50px 0;
@@ -687,7 +695,7 @@ p {
     text-align: center;
   }
 
-  /* -------------------footer------------------- */
+  /* ------------------- footer ------------------- */
   .footer-area {
     padding: 50px 0;
   }
@@ -723,5 +731,8 @@ p {
 @media screen and (max-width: 293px) {
   .service-box-container .first h3 {
     font-size: 16px;
+  }
+  .dropdown .dropdown-menu a {
+    font-size: 13px;
   }
 }
