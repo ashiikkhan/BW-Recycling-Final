@@ -1,0 +1,29 @@
+.all-content p {
+  color: black;
+}
+.all-content .middle div {
+  display: flex;
+  justify-content: center;
+}
+.all-content .middle div img {
+  width: 40%;
+  margin-bottom: 15px;
+}
+.all-content ul li {
+  margin-left: 30px;
+}
+.all-content h4 {
+  color: #005f2f;
+  font-weight: bold;
+}
+/* media query */
+@media screen and (max-width: 992px) {
+  .all-content .middle div img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-content .middle div img {
+    width: 60%;
+  }
+}
