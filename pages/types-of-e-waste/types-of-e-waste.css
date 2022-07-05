@@ -1,0 +1,40 @@
+.all-content p {
+  color: black;
+}
+.table-main {
+  width: 100%;
+  border: 1px solid gray;
+}
+td {
+  padding: 15px 10px;
+}
+.first-td {
+  width: 35%;
+  text-align: center;
+}
+.second-td {
+  width: 65%;
+}
+.table-main td {
+  text-align: center;
+}
+.first-td p {
+  text-align: center;
+}
+.table-main td:first-child {
+  text-align: left;
+}
+
+/* query */
+@media screen and (max-width: 768px) {
+  .first-td {
+    width: 20%;
+    text-align: center;
+  }
+  .second-td {
+    width: 80%;
+  }
+  td {
+    padding: 15px 3px;
+  }
+}
