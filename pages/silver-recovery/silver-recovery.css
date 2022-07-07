@@ -1,0 +1,16 @@
+.all-content p {
+  color: black;
+}
+.all-content h4 {
+  color: #005f2f;
+  font-weight: bold;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .img-container {
+    justify-content: start;
+  }
+}

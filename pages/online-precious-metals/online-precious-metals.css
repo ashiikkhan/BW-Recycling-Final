@@ -1,0 +1,12 @@
+.all-content p {
+  color: black;
+}
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-container img {
+  margin: 10px 0px;
+}
