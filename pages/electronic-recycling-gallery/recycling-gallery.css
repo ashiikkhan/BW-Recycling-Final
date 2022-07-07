@@ -1,0 +1,19 @@
+.all-content p {
+  color: black;
+}
+.content-container {
+  text-align: center;
+}
+.link-div-container {
+  display: flex;
+  text-align: left;
+}
+.link-div {
+  padding: 8px;
+}
+
+@media screen and (max-width: 792px) {
+  .link-div-container {
+    flex-direction: column;
+  }
+}
