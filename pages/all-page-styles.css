@@ -161,14 +161,11 @@ img {
 }
 /* --------------hero section ------------ */
 .hero-section {
-  background-image: url(assets/footer-bg.png);
-  background-repeat: no-repeat;
-  background-size: 1000px 100px;
-  z-index: 1;
   /* background image cannot be seen for this color; to check comment out color */
   background-color: var(--secondary-color);
   padding: 40px 0px 30px 0px;
 }
+
 .hero-section p {
   margin-top: 10px;
   font-size: 24px;
@@ -308,9 +305,9 @@ p {
 .footer-area {
   padding: 100px 0;
   background-color: #f4f4f4;
-  background-image: url(assets/footer-bg.png);
+  background-image: url(../assets/footer-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .footer-about {
   max-width: 40%;
