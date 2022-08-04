@@ -598,12 +598,16 @@ p {
   }
   .form-div-container {
     position: sticky;
-    top: 5%;
+    top: 10%;
     z-index: 1;
+  }
+  .form-div {
+    top: 0px;
   }
   .form-active {
     position: fixed;
     width: 80%;
+    top: 0px;
     right: 52px;
   }
   .contact-form {
