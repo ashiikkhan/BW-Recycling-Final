@@ -193,7 +193,7 @@ img {
   right: 0%;
   top: 50px;
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .form-active {
   visibility: visible;
@@ -203,7 +203,7 @@ img {
   right: 50px;
   top: 50px;
   z-index: 5;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 /* --------------------------hero-section ---------------------------------------- */
