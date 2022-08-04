@@ -602,12 +602,12 @@ p {
     z-index: 1;
   }
   .form-div {
-    top: 0px;
+    top: -20px;
   }
   .form-active {
     position: fixed;
     width: 80%;
-    top: 0px;
+    top: -20px;
     right: 52px;
   }
   .contact-form {
