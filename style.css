@@ -15,6 +15,10 @@ body {
   overflow-x: hidden !important;
   position: relative;
 }
+body.keyboard {
+  height: calc(100% + 500px);
+  padding: 20px;
+}
 :root {
   --primary-color: black;
   --secondary-color: #005f2f;
