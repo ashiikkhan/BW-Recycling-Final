@@ -17,7 +17,7 @@ body {
 }
 body.keyboard {
   height: calc(100% + 500px);
-  padding: 20px;
+  padding: 50px;
 }
 :root {
   --primary-color: black;
