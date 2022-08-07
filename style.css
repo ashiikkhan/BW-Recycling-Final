@@ -5,9 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html {
-  scroll-padding-top: 200px; /* your overlapping header/div height */
-}
+
 .container {
   max-width: 1300px;
 }
@@ -620,7 +618,7 @@ p {
   /* float-form class is for test  */
   .float-form {
     background-color: rebeccapurple !important;
-    height: 50vh;
+    height: 60vh;
     overflow-y: scroll;
   }
   .contact-form {
