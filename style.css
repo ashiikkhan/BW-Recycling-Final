@@ -5,7 +5,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+html {
+  scroll-padding-top: 200px; /* your overlapping header/div height */
+}
 .container {
   max-width: 1300px;
 }
@@ -14,6 +16,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden !important;
   position: relative;
+  z-index: -10;
 }
 body.keyboard {
   height: calc(100% + 500px);
@@ -609,10 +612,16 @@ p {
     top: -40px;
   }
   .form-active {
-    position: fixed;
     width: 80%;
+    position: fixed;
     top: -40px;
     right: 52px;
+  }
+  /* float-form class is for test  */
+  .float-form {
+    background-color: rebeccapurple !important;
+    height: 50vh;
+    overflow-y: scroll;
   }
   .contact-form {
     background: var(--secondary-color);
