@@ -618,7 +618,7 @@ p {
   /* float-form class is for test  */
   .float-form {
     background-color: rebeccapurple !important;
-    height: 60vh;
+    height: 80vh;
     overflow-y: scroll;
   }
   .contact-form {
