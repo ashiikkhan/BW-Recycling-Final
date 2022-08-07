@@ -612,13 +612,13 @@ p {
   .form-active {
     width: 80%;
     position: fixed;
-    top: -40px;
+    top: 20px;
     right: 52px;
   }
   /* float-form class is for test  */
   .float-form {
     background-color: rebeccapurple !important;
-    height: 80vh;
+    height: 70vh;
     overflow-y: scroll;
   }
   .contact-form {
