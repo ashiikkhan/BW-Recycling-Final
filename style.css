@@ -615,9 +615,11 @@ p {
     top: 20px;
     right: 52px;
   }
+  .focus-form {
+    top: -40px;
+  }
   /* float-form class is for test  */
   .float-form {
-    background-color: rebeccapurple !important;
     height: 70vh;
     overflow-y: scroll;
   }
